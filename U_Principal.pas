@@ -14,6 +14,8 @@ type
     BitBtn1: TBitBtn;
     BitBtn2: TBitBtn;
     Label3: TLabel;
+    procedure BitBtn1Click(Sender: TObject);
+    procedure BitBtn2Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -26,5 +28,17 @@ var
 implementation
 
 {$R *.dfm}
+
+uses U_CadastoDono, U_CadastroCao;
+
+procedure TForm1.BitBtn1Click(Sender: TObject);
+begin
+U_CadastoDono.Form2.ShowModal;
+end;
+
+procedure TForm1.BitBtn2Click(Sender: TObject);
+begin
+U_CadastroCao.Form3.ShowModal;
+end;
 
 end.

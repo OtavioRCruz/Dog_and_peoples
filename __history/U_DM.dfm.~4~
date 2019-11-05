@@ -1,0 +1,53 @@
+object DataModule1: TDataModule1
+  OldCreateOrder = False
+  Height = 277
+  Width = 371
+  object ADOConnection1: TADOConnection
+    Connected = True
+    ConnectionString = 
+      'Provider=MSDASQL.1;Persist Security Info=False;Extended Properti' +
+      'es="DSN=MYSQL ODBC Connector Petshop;DESCRIPTION=Conexao locao;S' +
+      'ERVER=127.0.0.1;UID=root;DATABASE=petshop;PORT=3306"'
+    LoginPrompt = False
+    Left = 64
+    Top = 152
+  end
+  object ADOTable_Caes: TADOTable
+    Active = True
+    Connection = ADOConnection1
+    CursorType = ctStatic
+    TableName = 'caes'
+    Left = 264
+    Top = 112
+    object ADOTable_CaesID_CAO: TAutoIncField
+      FieldName = 'ID_CAO'
+      ReadOnly = True
+    end
+    object ADOTable_CaesNOME: TStringField
+      FieldName = 'NOME'
+      Size = 30
+    end
+    object ADOTable_CaesRACA: TStringField
+      FieldName = 'RACA'
+      Size = 30
+    end
+  end
+  object DataSource_Caes: TDataSource
+    DataSet = ADOTable_Caes
+    Left = 272
+    Top = 32
+  end
+  object ADOTable1_Donos: TADOTable
+    Active = True
+    Connection = ADOConnection1
+    CursorType = ctStatic
+    TableName = 'donos'
+    Left = 88
+    Top = 88
+  end
+  object DataSource_Donos: TDataSource
+    DataSet = ADOTable1_Donos
+    Left = 72
+    Top = 24
+  end
+end

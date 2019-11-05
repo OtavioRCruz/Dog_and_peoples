@@ -2,7 +2,7 @@ object Form2: TForm2
   Left = 0
   Top = 0
   Caption = 'Form2'
-  ClientHeight = 242
+  ClientHeight = 222
   ClientWidth = 527
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -26,11 +26,47 @@ object Form2: TForm2
     Font.Style = []
     ParentFont = False
   end
+  object Label2: TLabel
+    Left = 32
+    Top = 64
+    Width = 47
+    Height = 13
+    Caption = 'ID_DONO'
+    FocusControl = DBEdit1
+  end
+  object Label3: TLabel
+    Left = 32
+    Top = 104
+    Width = 29
+    Height = 13
+    Caption = 'NOME'
+    FocusControl = DBEdit2
+  end
   object DBNavigator1: TDBNavigator
-    Left = 136
-    Top = 201
-    Width = 240
+    Left = 142
+    Top = 169
+    Width = 230
     Height = 25
+    DataSource = DataModule1.DataSource_Donos
     TabOrder = 0
+  end
+  object DBEdit1: TDBEdit
+    Left = 32
+    Top = 80
+    Width = 134
+    Height = 21
+    DataField = 'ID_DONO'
+    DataSource = DataModule1.DataSource_Donos
+    Enabled = False
+    TabOrder = 1
+  end
+  object DBEdit2: TDBEdit
+    Left = 32
+    Top = 120
+    Width = 394
+    Height = 21
+    DataField = 'NOME'
+    DataSource = DataModule1.DataSource_Donos
+    TabOrder = 2
   end
 end
