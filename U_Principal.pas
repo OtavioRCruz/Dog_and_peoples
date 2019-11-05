@@ -11,11 +11,15 @@ type
   TForm1 = class(TForm)
     Label1: TLabel;
     Label2: TLabel;
-    BitBtn1: TBitBtn;
-    BitBtn2: TBitBtn;
     Label3: TLabel;
+    Image1: TImage;
+    Image2: TImage;
+    Image3: TImage;
     procedure BitBtn1Click(Sender: TObject);
     procedure BitBtn2Click(Sender: TObject);
+    procedure Image1Click(Sender: TObject);
+    procedure Image2Click(Sender: TObject);
+    procedure Image3Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -29,16 +33,22 @@ implementation
 
 {$R *.dfm}
 
-uses U_CadastoDono, U_CadastroCao;
+uses U_CadastoDono, U_CadastroCao, U_Relatorio;
 
-procedure TForm1.BitBtn1Click(Sender: TObject);
+
+procedure TForm1.Image1Click(Sender: TObject);
 begin
 U_CadastoDono.Form2.ShowModal;
 end;
 
-procedure TForm1.BitBtn2Click(Sender: TObject);
+procedure TForm1.Image2Click(Sender: TObject);
 begin
 U_CadastroCao.Form3.ShowModal;
+end;
+
+procedure TForm1.Image3Click(Sender: TObject);
+begin
+U_Relatorio.Form4.ShowModal;
 end;
 
 end.

@@ -4,7 +4,7 @@ object Form2: TForm2
   Caption = 'Form2'
   ClientHeight = 222
   ClientWidth = 527
-  Color = clBtnFace
+  Color = clWhite
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
   Font.Height = -11
@@ -29,9 +29,9 @@ object Form2: TForm2
   object Label2: TLabel
     Left = 32
     Top = 64
-    Width = 47
+    Width = 11
     Height = 13
-    Caption = 'ID_DONO'
+    Caption = 'ID'
     FocusControl = DBEdit1
   end
   object Label3: TLabel

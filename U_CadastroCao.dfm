@@ -4,7 +4,7 @@ object Form3: TForm3
   Caption = 'Form3'
   ClientHeight = 242
   ClientWidth = 527
-  Color = clBtnFace
+  Color = clWhite
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
   Font.Height = -11
@@ -18,7 +18,7 @@ object Form3: TForm3
     Top = 8
     Width = 192
     Height = 33
-    Caption = 'CADASTRO CAO'
+    Caption = 'CADASTRO C'#195'O'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -27
@@ -29,9 +29,9 @@ object Form3: TForm3
   object Label2: TLabel
     Left = 24
     Top = 45
-    Width = 39
+    Width = 11
     Height = 13
-    Caption = 'ID_CAO'
+    Caption = 'ID'
     FocusControl = DBEdit1
   end
   object Label3: TLabel
@@ -47,7 +47,7 @@ object Form3: TForm3
     Top = 128
     Width = 28
     Height = 13
-    Caption = 'RACA'
+    Caption = 'RA'#199'A'
     FocusControl = DBEdit3
   end
   object DBNavigator1: TDBNavigator
