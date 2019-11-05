@@ -42,19 +42,21 @@ object Form1: TForm1
     Caption = 'Cadastrar Cao'
   end
   object BitBtn1: TBitBtn
-    Left = 48
+    Left = 56
     Top = 136
     Width = 121
     Height = 98
     Caption = 'BitBtn1'
     TabOrder = 0
+    OnClick = BitBtn1Click
   end
   object BitBtn2: TBitBtn
     Left = 320
-    Top = 136
+    Top = 144
     Width = 121
     Height = 98
     Caption = 'BitBtn2'
     TabOrder = 1
+    OnClick = BitBtn2Click
   end
 end
