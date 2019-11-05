@@ -17,7 +17,7 @@ object DataModule1: TDataModule1
     Connection = ADOConnection1
     CursorType = ctStatic
     TableName = 'caes'
-    Left = 272
+    Left = 288
     Top = 128
     object ADOTable_CaesID_CAO: TAutoIncField
       FieldName = 'ID_CAO'
@@ -57,5 +57,22 @@ object DataModule1: TDataModule1
     DataSet = ADOTable_Donos
     Left = 64
     Top = 56
+  end
+  object ADOTable1: TADOTable
+    Active = True
+    Connection = ADOConnection1
+    CursorType = ctStatic
+    TableName = 'caes_dono'
+    Left = 160
+    Top = 128
+  end
+  object ADOQuery1: TADOQuery
+    Connection = ADOConnection1
+    Parameters = <
+      item
+        Value = Null
+      end>
+    Left = 264
+    Top = 200
   end
 end

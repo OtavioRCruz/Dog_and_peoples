@@ -2,8 +2,8 @@ object Form3: TForm3
   Left = 0
   Top = 0
   Caption = 'Form3'
-  ClientHeight = 242
-  ClientWidth = 527
+  ClientHeight = 360
+  ClientWidth = 470
   Color = clWhite
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -14,7 +14,7 @@ object Form3: TForm3
   PixelsPerInch = 96
   TextHeight = 13
   object Label1: TLabel
-    Left = 160
+    Left = 128
     Top = 8
     Width = 192
     Height = 33
@@ -51,8 +51,8 @@ object Form3: TForm3
     FocusControl = DBEdit3
   end
   object DBNavigator1: TDBNavigator
-    Left = 136
-    Top = 192
+    Left = 112
+    Top = 184
     Width = 240
     Height = 25
     DataSource = DataModule1.DataSource_Caes
@@ -85,5 +85,18 @@ object Form3: TForm3
     DataField = 'RACA'
     DataSource = DataModule1.DataSource_Caes
     TabOrder = 3
+  end
+  object DBGrid1: TDBGrid
+    Left = 8
+    Top = 223
+    Width = 454
+    Height = 120
+    DataSource = DataModule1.DataSource_Caes
+    TabOrder = 4
+    TitleFont.Charset = DEFAULT_CHARSET
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -11
+    TitleFont.Name = 'Tahoma'
+    TitleFont.Style = []
   end
 end

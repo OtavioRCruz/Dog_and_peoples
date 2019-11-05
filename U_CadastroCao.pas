@@ -5,7 +5,7 @@ interface
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.DBCtrls, Vcl.StdCtrls,
-  Vcl.Mask;
+  Vcl.Mask, Data.DB, Vcl.Grids, Vcl.DBGrids;
 
 type
   TForm3 = class(TForm)
@@ -17,6 +17,7 @@ type
     DBEdit2: TDBEdit;
     Label4: TLabel;
     DBEdit3: TDBEdit;
+    DBGrid1: TDBGrid;
   private
     { Private declarations }
   public

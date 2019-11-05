@@ -1,0 +1,54 @@
+unit U_CadastoDono;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.ExtCtrls, Vcl.DBCtrls,
+  Vcl.Mask, Vcl.Buttons;
+
+type
+  TForm2 = class(TForm)
+    Label1: TLabel;
+    Label2: TLabel;
+    DBEdit1: TDBEdit;
+    Label3: TLabel;
+    DBEdit2: TDBEdit;
+    sbNovo: TSpeedButton;
+    sbCadastrar_Dono: TSpeedButton;
+    sbDeletar_Dono: TSpeedButton;
+    sbAtualizar_Dono: TSpeedButton;
+    procedure sbNovoClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form2: TForm2;
+
+implementation
+
+{$R *.dfm}
+
+uses U_DM;
+
+procedure TForm2.sbCadastrar_Dono(Sender: TObject);
+begin
+  If Application.MessageBox('Confirma a inserção no sitema?','>> Verificação de inserção <<',MB_YESNO +
+                           MB_ICONQUESTION + MB_DEFBUTTON2) = IDYES Then
+  begin
+    U_DM.DataModule1.ADOTable_Donos.Post;
+    U_DM.DataModule1.ADOTable_Donos.Insert;
+    ShowMessage('Dados salvos com sucesso!');
+  end
+  else
+  begin
+    U_DM.DataModule1.ADOTable_Donos.Cancel;
+    U_DM.DataModule1.ADOTable_Donos.Insert;
+    ShowMessage('Dados não salvos!');
+  end;
+end;
+
+end.

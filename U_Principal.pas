@@ -15,8 +15,6 @@ type
     Image1: TImage;
     Image2: TImage;
     Image3: TImage;
-    procedure BitBtn1Click(Sender: TObject);
-    procedure BitBtn2Click(Sender: TObject);
     procedure Image1Click(Sender: TObject);
     procedure Image2Click(Sender: TObject);
     procedure Image3Click(Sender: TObject);

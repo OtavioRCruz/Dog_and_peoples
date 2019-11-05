@@ -17,6 +17,8 @@ type
     DataSource_Donos: TDataSource;
     ADOTable_DonosID_DONO: TAutoIncField;
     ADOTable_DonosNOME: TStringField;
+    ADOTable1: TADOTable;
+    ADOQuery1: TADOQuery;
   private
     { Private declarations }
   public
