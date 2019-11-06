@@ -46,7 +46,7 @@ end;
 
 procedure TForm1.Image3Click(Sender: TObject);
 begin
-U_Relatorio.Form4.ShowModal;
+//U_Relatorio.Form4.frxReport1.Preview;
 end;
 
 end.

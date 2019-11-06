@@ -11,8 +11,25 @@ object Form4: TForm4
   Font.Name = 'Tahoma'
   Font.Style = []
   OldCreateOrder = False
+  Position = poDesigned
   PixelsPerInch = 96
   TextHeight = 13
+  object frxDBDataset1: TfrxDBDataset
+    UserName = 'frxDBDataset1'
+    CloseDataSource = False
+    DataSet = DataModule1.ADOTable_Caes
+    BCDToCurrency = False
+    Left = 24
+    Top = 16
+  end
+  object frxDBDataset2: TfrxDBDataset
+    UserName = 'frxDBDataset2'
+    CloseDataSource = False
+    DataSet = DataModule1.ADOTable_Donos
+    BCDToCurrency = False
+    Left = 88
+    Top = 16
+  end
   object frxReport1: TfrxReport
     Version = '6.4.17'
     DotMatrixReport = False
@@ -21,24 +38,64 @@ object Form4: TForm4
     PreviewOptions.Zoom = 1.000000000000000000
     PrintOptions.Printer = 'Padr'#227'o'
     PrintOptions.PrintOnSheet = 0
-    ReportOptions.CreateDate = 43774.687137233800000000
-    ReportOptions.LastChange = 43774.687137233800000000
+    ReportOptions.CreateDate = 43775.084253379630000000
+    ReportOptions.LastChange = 43775.084521435190000000
     ScriptLanguage = 'PascalScript'
     ScriptText.Strings = (
       'begin'
       ''
       'end.')
-    Left = 64
-    Top = 120
-    Datasets = <>
+    Left = 160
+    Top = 72
+    Datasets = <
+      item
+        DataSet = frxDBDataset1
+        DataSetName = 'frxDBDataset1'
+      end>
     Variables = <>
     Style = <>
-  end
-  object frxDBDataset1: TfrxDBDataset
-    UserName = 'frxDBDataset1'
-    CloseDataSource = False
-    BCDToCurrency = False
-    Left = 72
-    Top = 32
+    object Data: TfrxDataPage
+      Height = 1000.000000000000000000
+      Width = 1000.000000000000000000
+    end
+    object Page1: TfrxReportPage
+      PaperWidth = 210.000000000000000000
+      PaperHeight = 297.000000000000000000
+      PaperSize = 9
+      LeftMargin = 10.000000000000000000
+      RightMargin = 10.000000000000000000
+      TopMargin = 10.000000000000000000
+      BottomMargin = 10.000000000000000000
+      Frame.Typ = []
+      MirrorMode = []
+      object frxDBDataset1NOME: TfrxMemoView
+        IndexTag = 1
+        AllowVectorExport = True
+        Left = 22.677180000000000000
+        Top = 49.133890000000000000
+        Width = 238.110390000000000000
+        Height = 18.897650000000000000
+        DataField = 'NOME'
+        DataSet = frxDBDataset1
+        DataSetName = 'frxDBDataset1'
+        Frame.Typ = []
+        Memo.UTF8W = (
+          '[frxDBDataset1."NOME"]')
+      end
+      object frxDBDataset1RACA: TfrxMemoView
+        IndexTag = 1
+        AllowVectorExport = True
+        Left = 306.141930000000000000
+        Top = 52.913420000000000000
+        Width = 238.110390000000000000
+        Height = 18.897650000000000000
+        DataField = 'RACA'
+        DataSet = frxDBDataset1
+        DataSetName = 'frxDBDataset1'
+        Frame.Typ = []
+        Memo.UTF8W = (
+          '[frxDBDataset1."RACA"]')
+      end
+    end
   end
 end
