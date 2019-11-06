@@ -20,14 +20,17 @@ object DataModule1: TDataModule1
     Left = 288
     Top = 128
     object ADOTable_CaesID_CAO: TAutoIncField
+      DisplayWidth = 7
       FieldName = 'ID_CAO'
       ReadOnly = True
     end
     object ADOTable_CaesNOME: TStringField
+      DisplayWidth = 30
       FieldName = 'NOME'
       Size = 30
     end
     object ADOTable_CaesRACA: TStringField
+      DisplayWidth = 30
       FieldName = 'RACA'
       Size = 30
     end
@@ -57,22 +60,5 @@ object DataModule1: TDataModule1
     DataSet = ADOTable_Donos
     Left = 64
     Top = 56
-  end
-  object ADOTable1: TADOTable
-    Active = True
-    Connection = ADOConnection1
-    CursorType = ctStatic
-    TableName = 'caes_dono'
-    Left = 160
-    Top = 128
-  end
-  object ADOQuery1: TADOQuery
-    Connection = ADOConnection1
-    Parameters = <
-      item
-        Value = Null
-      end>
-    Left = 264
-    Top = 200
   end
 end

@@ -92,6 +92,7 @@ object Form3: TForm3
     Width = 454
     Height = 120
     DataSource = DataModule1.DataSource_Caes
+    Options = [dgTitles, dgIndicator, dgColLines, dgRowLines, dgTabs, dgTitleClick, dgTitleHotTrack]
     TabOrder = 4
     TitleFont.Charset = DEFAULT_CHARSET
     TitleFont.Color = clWindowText
